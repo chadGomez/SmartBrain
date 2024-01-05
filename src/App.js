@@ -73,8 +73,8 @@ class App extends Component {
       })
     })
       .then(resp => resp.json())
-      .then(response => {
-        if (response) {
+      .then(resp => {
+        if (resp) {
           fetch('https://smartbrainws.onrender.com/image', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
@@ -88,7 +88,7 @@ class App extends Component {
             })
             .catch(console.log)
         }
-        this.displayFaceBox(this.calculateFaceLocation(response))
+        this.displayFaceBox(this.calculateFaceLocation(resp))
       })
       .catch(err => console.log(err, 'error'));
   }
