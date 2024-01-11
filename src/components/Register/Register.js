@@ -23,7 +23,7 @@ class Register extends Component {
   }
 
   onSubmitSignin = () => {
-    fetch('https://smartbrain-4mca.onrender.com/register', {
+    fetch('https://smartbrainws.onrender.com/register', {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
