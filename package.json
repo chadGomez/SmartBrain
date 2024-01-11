@@ -1,6 +1,5 @@
 {
   "name": "smartbrain-project",
-  "homepage": "https://chadGomez.github.io/SmartBrain",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
